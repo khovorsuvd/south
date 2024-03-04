@@ -1,0 +1,2644 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2');
+    font-weight: 1;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ThinItalic.woff2') format('woff2');
+    font-weight: 1;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5)
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.col {
+    flex: 1 0 0%
+}
+
+.row-cols-auto>* {
+    flex: 0 0 auto;
+    width: auto
+}
+
+.row-cols-1>* {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.row-cols-2>* {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.row-cols-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%
+}
+
+.row-cols-4>* {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.row-cols-5>* {
+    flex: 0 0 auto;
+    width: 20%
+}
+
+.row-cols-6>* {
+    flex: 0 0 auto;
+    width: 16.6666666667%
+}
+
+@media (min-width:576px) {
+    .col-sm {
+        flex: 1 0 0%
+    }
+
+    .row-cols-sm-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-sm-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-sm-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-sm-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-sm-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-sm-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-sm-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:768px) {
+    .col-md {
+        flex: 1 0 0%
+    }
+
+    .row-cols-md-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-md-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-md-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-md-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-md-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-md-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-md-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg {
+        flex: 1 0 0%
+    }
+
+    .row-cols-lg-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-lg-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-lg-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-lg-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-lg-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-lg-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-lg-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:1200px) {
+    .col-xl {
+        flex: 1 0 0%
+    }
+
+    .row-cols-xl-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-xl-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-xl-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-xl-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-xl-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-xl-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-xl-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+@media (min-width:1400px) {
+    .col-xxl {
+        flex: 1 0 0%
+    }
+
+    .row-cols-xxl-auto>* {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .row-cols-xxl-1>* {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .row-cols-xxl-2>* {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .row-cols-xxl-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%
+    }
+
+    .row-cols-xxl-4>* {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .row-cols-xxl-5>* {
+        flex: 0 0 auto;
+        width: 20%
+    }
+
+    .row-cols-xxl-6>* {
+        flex: 0 0 auto;
+        width: 16.6666666667%
+    }
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%
+}
+
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.offset-1 {
+    margin-left: 8.33333333%
+}
+
+.offset-2 {
+    margin-left: 16.66666667%
+}
+
+.offset-3 {
+    margin-left: 25%
+}
+
+.offset-4 {
+    margin-left: 33.33333333%
+}
+
+.offset-5 {
+    margin-left: 41.66666667%
+}
+
+.offset-6 {
+    margin-left: 50%
+}
+
+.offset-7 {
+    margin-left: 58.33333333%
+}
+
+.offset-8 {
+    margin-left: 66.66666667%
+}
+
+.offset-9 {
+    margin-left: 75%
+}
+
+.offset-10 {
+    margin-left: 83.33333333%
+}
+
+.offset-11 {
+    margin-left: 91.66666667%
+}
+
+.g-0,
+.gx-0 {
+    --bs-gutter-x: 0
+}
+
+.g-0,
+.gy-0 {
+    --bs-gutter-y: 0
+}
+
+.g-1,
+.gx-1 {
+    --bs-gutter-x: 0.25rem
+}
+
+.g-1,
+.gy-1 {
+    --bs-gutter-y: 0.25rem
+}
+
+.g-2,
+.gx-2 {
+    --bs-gutter-x: 0.5rem
+}
+
+.g-2,
+.gy-2 {
+    --bs-gutter-y: 0.5rem
+}
+
+.g-3,
+.gx-3 {
+    --bs-gutter-x: 1rem
+}
+
+.g-3,
+.gy-3 {
+    --bs-gutter-y: 1rem
+}
+
+.g-4,
+.gx-4 {
+    --bs-gutter-x: 1.5rem
+}
+
+.g-4,
+.gy-4 {
+    --bs-gutter-y: 1.5rem
+}
+
+.g-5,
+.gx-5 {
+    --bs-gutter-x: 3rem
+}
+
+.g-5,
+.gy-5 {
+    --bs-gutter-y: 3rem
+}
+
+@media (min-width:576px) {
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-sm-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-sm-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-sm-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-sm-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-sm-0 {
+        margin-left: 0
+    }
+
+    .offset-sm-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-sm-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-sm-3 {
+        margin-left: 25%
+    }
+
+    .offset-sm-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-sm-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-sm-6 {
+        margin-left: 50%
+    }
+
+    .offset-sm-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-sm-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-sm-9 {
+        margin-left: 75%
+    }
+
+    .offset-sm-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-sm-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-sm-0,
+    .gx-sm-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-sm-0,
+    .gy-sm-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-sm-1,
+    .gx-sm-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-sm-1,
+    .gy-sm-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-sm-2,
+    .gx-sm-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-sm-2,
+    .gy-sm-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-sm-3,
+    .gx-sm-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-sm-3,
+    .gy-sm-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-sm-4,
+    .gx-sm-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-sm-4,
+    .gy-sm-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-sm-5,
+    .gx-sm-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-sm-5,
+    .gy-sm-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-md-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-md-0 {
+        margin-left: 0
+    }
+
+    .offset-md-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-md-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-md-3 {
+        margin-left: 25%
+    }
+
+    .offset-md-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-md-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-md-6 {
+        margin-left: 50%
+    }
+
+    .offset-md-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-md-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-md-9 {
+        margin-left: 75%
+    }
+
+    .offset-md-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-md-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-md-0,
+    .gx-md-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-md-0,
+    .gy-md-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-md-1,
+    .gx-md-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-md-1,
+    .gy-md-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-md-2,
+    .gx-md-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-md-2,
+    .gy-md-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-md-3,
+    .gx-md-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-md-3,
+    .gy-md-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-md-4,
+    .gx-md-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-md-4,
+    .gy-md-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-md-5,
+    .gx-md-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-md-5,
+    .gy-md-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-lg-0 {
+        margin-left: 0
+    }
+
+    .offset-lg-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-lg-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-lg-3 {
+        margin-left: 25%
+    }
+
+    .offset-lg-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-lg-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-lg-6 {
+        margin-left: 50%
+    }
+
+    .offset-lg-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-lg-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-lg-9 {
+        margin-left: 75%
+    }
+
+    .offset-lg-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-lg-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-lg-0,
+    .gx-lg-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-lg-0,
+    .gy-lg-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-lg-1,
+    .gx-lg-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-lg-1,
+    .gy-lg-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-lg-2,
+    .gx-lg-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-lg-2,
+    .gy-lg-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-lg-3,
+    .gx-lg-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-lg-3,
+    .gy-lg-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-lg-4,
+    .gx-lg-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-lg-4,
+    .gy-lg-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-lg-5,
+    .gx-lg-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-lg-5,
+    .gy-lg-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
+@media (min-width:1200px) {
+    .col-xl-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-xl-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-xl-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-xl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-xl-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-xl-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-xl-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-xl-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-xl-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-xl-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-xl-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-xl-0 {
+        margin-left: 0
+    }
+
+    .offset-xl-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-xl-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-xl-3 {
+        margin-left: 25%
+    }
+
+    .offset-xl-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-xl-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-xl-6 {
+        margin-left: 50%
+    }
+
+    .offset-xl-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-xl-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-xl-9 {
+        margin-left: 75%
+    }
+
+    .offset-xl-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-xl-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-xl-0,
+    .gx-xl-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-xl-0,
+    .gy-xl-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-xl-1,
+    .gx-xl-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-xl-1,
+    .gy-xl-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-xl-2,
+    .gx-xl-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-xl-2,
+    .gy-xl-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-xl-3,
+    .gx-xl-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-xl-3,
+    .gy-xl-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-xl-4,
+    .gx-xl-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-xl-4,
+    .gy-xl-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-xl-5,
+    .gx-xl-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-xl-5,
+    .gy-xl-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
+@media (min-width:1400px) {
+    .col-xxl-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .col-xxl-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%
+    }
+
+    .col-xxl-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%
+    }
+
+    .col-xxl-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .col-xxl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+
+    .col-xxl-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%
+    }
+
+    .col-xxl-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .col-xxl-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%
+    }
+
+    .col-xxl-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%
+    }
+
+    .col-xxl-9 {
+        flex: 0 0 auto;
+        width: 75%
+    }
+
+    .col-xxl-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%
+    }
+
+    .col-xxl-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%
+    }
+
+    .col-xxl-12 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
+    .offset-xxl-0 {
+        margin-left: 0
+    }
+
+    .offset-xxl-1 {
+        margin-left: 8.33333333%
+    }
+
+    .offset-xxl-2 {
+        margin-left: 16.66666667%
+    }
+
+    .offset-xxl-3 {
+        margin-left: 25%
+    }
+
+    .offset-xxl-4 {
+        margin-left: 33.33333333%
+    }
+
+    .offset-xxl-5 {
+        margin-left: 41.66666667%
+    }
+
+    .offset-xxl-6 {
+        margin-left: 50%
+    }
+
+    .offset-xxl-7 {
+        margin-left: 58.33333333%
+    }
+
+    .offset-xxl-8 {
+        margin-left: 66.66666667%
+    }
+
+    .offset-xxl-9 {
+        margin-left: 75%
+    }
+
+    .offset-xxl-10 {
+        margin-left: 83.33333333%
+    }
+
+    .offset-xxl-11 {
+        margin-left: 91.66666667%
+    }
+
+    .g-xxl-0,
+    .gx-xxl-0 {
+        --bs-gutter-x: 0
+    }
+
+    .g-xxl-0,
+    .gy-xxl-0 {
+        --bs-gutter-y: 0
+    }
+
+    .g-xxl-1,
+    .gx-xxl-1 {
+        --bs-gutter-x: 0.25rem
+    }
+
+    .g-xxl-1,
+    .gy-xxl-1 {
+        --bs-gutter-y: 0.25rem
+    }
+
+    .g-xxl-2,
+    .gx-xxl-2 {
+        --bs-gutter-x: 0.5rem
+    }
+
+    .g-xxl-2,
+    .gy-xxl-2 {
+        --bs-gutter-y: 0.5rem
+    }
+
+    .g-xxl-3,
+    .gx-xxl-3 {
+        --bs-gutter-x: 1rem
+    }
+
+    .g-xxl-3,
+    .gy-xxl-3 {
+        --bs-gutter-y: 1rem
+    }
+
+    .g-xxl-4,
+    .gx-xxl-4 {
+        --bs-gutter-x: 1.5rem
+    }
+
+    .g-xxl-4,
+    .gy-xxl-4 {
+        --bs-gutter-y: 1.5rem
+    }
+
+    .g-xxl-5,
+    .gx-xxl-5 {
+        --bs-gutter-x: 3rem
+    }
+
+    .g-xxl-5,
+    .gy-xxl-5 {
+        --bs-gutter-y: 3rem
+    }
+}
+
+
+body {
+    overflow-x: hidden;
+    background-color: #110A1D;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: inherit;
+
+
+}
+
+.container {
+    max-width: 95vw;
+    overflow-x: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    height: 60px;
+    width: 170px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-slogan {
+    width: 179px;
+    height: 62px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 16px;
+    background: linear-gradient(180deg, #0ABE9E 0%, #186ED3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+a {
+    all: unset;
+}
+
+header {
+    border-radius: 10px;
+    border: 4px solid #0ABFA6;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #110A1D;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.link-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav-link {
+    display: block;
+    padding: 20px 15px;
+
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.header-nav-link:hover {
+
+
+    text-shadow: 2px 2px 15px #0ABFA6;
+}
+
+.header-nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.header-nav-link:after {
+
+    display: block;
+    position: relative;
+    left: 45%;
+    width: 0px;
+    top: 5px;
+    line-height: 3px;
+    height: 2px;
+    background-color: #0ABFA6;
+    content: "";
+    transition: 0.5s ease-in-out;
+
+}
+
+.language,
+.registration {
+
+    border: 2px solid #0ABFA6;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: .8rem;
+}
+
+option {
+
+    background-color: #110A1D;
+}
+
+.login {
+    border: 2px solid #0ABFA6;
+    background-color: #0ABFA6;
+
+    border-radius: 10px;
+    padding: .8rem;
+}
+
+.logo-header:hover .logo {
+    filter: drop-shadow(3px 3px 10px #cacfb2);
+
+}
+
+.button-bord {
+    border-radius: 48px;
+    background: #478BF9;
+
+    display: block;
+
+    max-width: 393px;
+
+    font-size: 25px;
+    font-weight: 500;
+
+
+
+    /* Btn. - CTA Big */
+
+    /* Auto layout */
+
+    text-align: center;
+    padding: 15px 72px;
+
+
+    width: 146px;
+
+
+    /* Main/Blue #478BF9 */
+
+
+
+
+
+}
+
+.bord-title {
+    color: #0ABFA6;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 70px;
+}
+
+.bord-title:first-line {
+    color: #FFF;
+}
+
+.bord-text {
+    /* Играй, выигрывай, храни - крипто розыгрыши с нами! */
+
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    /* or 100% */
+    /* Transp. White/White 60% */
+    color: rgba(255, 255, 255, 0.6);
+
+
+    align-self: stretch;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoom-large {
+    font-size: 8px;
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: 480px;
+    height: 100vh;
+    width: 1500px;
+
+}
+
+#universe {
+    z-index: 1;
+    position: absolute;
+
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#galaxy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*perspective: 4000;*/
+}
+
+#solar-system {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform-style: preserve-3d;
+    animation-name: orbit;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.orbit .orbit {
+    animation-name: suborbit;
+}
+
+.pos {
+    position: absolute;
+    top: 50%;
+    width: 2em;
+    height: 2em;
+    margin-top: -1em;
+    margin-left: -1em;
+    transform-style: preserve-3d;
+    animation-name: invert;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#sun,
+.planet,
+#earth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+
+    transform-style: preserve-3d;
+}
+
+#sun {
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 0;
+}
+
+.planet {
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+
+
+/* --------------------------------------------------------------------------- planets index */
+#mercury {
+    z-index: 10;
+}
+
+#venus {
+    z-index: 90;
+}
+
+#earth {
+    z-index: 80;
+}
+
+
+
+#mars {
+    z-index: 60;
+}
+
+#jupiter {
+    z-index: 50;
+}
+
+#saturn {
+    z-index: 40;
+}
+
+#uranus {
+    z-index: 30;
+}
+
+#neptune {
+    z-index: 20;
+}
+
+#sun {
+    z-index: 10;
+}
+
+/* --------------------------------------------------------------------------- animations */
+@keyframes orbit {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+
+
+
+@keyframes suborbit {
+    0% {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(90deg) rotateZ(-360deg);
+    }
+}
+
+@keyframes invert {
+    0% {
+        transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+/* --------------------------------------------------------------------------- opening */
+.view-3D .opening #sun,
+.view-3D .opening .orbit,
+.view-3D .opening .pos,
+.view-3D .opening .planet,
+.view-3D .opening .satelite,
+.view-3D .opening .ring {
+    transition-duration: 4s;
+}
+
+#universe.opening #sun {
+    box-shadow: 0 0 0 rgba(255, 160, 60, 0);
+}
+
+
+
+/* --------------------------------------------------------------------------- 3D view */
+.view-3D.zoom-large #sun {
+    transform-style: preserve-3d;
+}
+
+.view-3D.zoom-large .orbit {
+    transform-style: preserve-3d;
+}
+
+.view-3D #solar-system {
+    transform: rotateX(75deg);
+}
+
+.view-3D #sun {
+    transform: rotateX(-90deg);
+}
+
+.view-3D .ring {
+    transform: rotateX(90deg);
+}
+
+.view-3D .planet,
+.view-3D .moon {
+    transform: rotateX(0deg);
+}
+
+/* --------------------------------------------------------------------------- large zoom */
+.zoom-large #solar-system {
+    width: 100%;
+}
+
+.zoom-large.view-2D .scale-stretched #solar-system {
+    font-size: 26%;
+}
+
+.zoom-large.view-3D .scale-stretched #solar-system {
+    font-size: 62%;
+}
+
+.zoom-large.view-2D .scale-d #solar-system {
+    font-size: 22%;
+}
+
+.zoom-large.view-3D .scale-d #solar-system {
+    font-size: 48%;
+}
+
+.zoom-large.view-2D .scale-s #solar-system {
+    font-size: 7%;
+}
+
+.zoom-large.view-3D .scale-s #solar-system {
+    font-size: 14%;
+}
+
+/* --------------------------------------------------------------------------- close zoom */
+
+
+.zoom-close.view-3D .scale-d #solar-system {
+    font-size: 84%;
+}
+
+.zoom-close .scale-s #solar-system {
+    margin-left: -145%;
+}
+
+.zoom-close.view-2D .scale-s #solar-system {
+    font-size: 40%;
+}
+
+.zoom-close.view-3D .scale-s #solar-system {
+    font-size: 40%;
+}
+
+.zoom-close .orbit,
+.zoom-close .pos,
+.zoom-close .planet,
+.zoom-close .satelite,
+.zoom-close .ring {
+    animation-play-state: paused !important;
+    animation-duration: 0s !important;
+    animation: none !important;
+}
+
+.zoom-close.view-2D .planet,
+.zoom-close.view-2D .moon {
+    transform: rotateX(0deg);
+}
+
+.zoom-close.view-3D .planet {
+    transform: rotateX(-90deg);
+}
+
+.zoom-close.view-3D .moon {
+    transform: rotateX(90deg);
+}
+
+.zoom-close .pos {
+    left: 100% !important;
+    top: 50% !important;
+}
+
+/* --------------------------------------------------------------------------- data */
+/* --------------------------------------------------------------------------- speed */
+/* sideral years */
+#mercury .pos,
+#mercury .planet,
+#mercury.orbit {
+    animation-duration: 12s;
+}
+
+#venus .pos,
+#venus .planet,
+#venus.orbit {
+    animation-duration: 12s;
+}
+
+#earth .pos,
+#earth .planet,
+#earth.orbit {
+    animation-duration: 12s;
+}
+
+#earth .orbit .pos,
+#earth .orbit {
+    animation-duration: 12s;
+}
+
+#mars .pos,
+#mars .planet,
+#mars.orbit {
+    animation-duration: 12s;
+}
+
+#jupiter .pos,
+#jupiter .planet,
+#jupiter.orbit {
+    animation-duration: 12s;
+}
+
+#saturn .pos,
+#saturn .planet,
+#saturn.orbit,
+#saturn .ring {
+    animation-duration: 12s;
+}
+
+#uranus .pos,
+#uranus .planet,
+#uranus.orbit {
+    animation-duration: 18s;
+}
+
+#neptune .pos,
+#neptune .planet,
+#neptune.orbit {
+    animation-duration: 12s;
+}
+
+/* --------------------------------------------------------------------------- planets sizes */
+/* --------------------------------------------------------------------------- stretched sizes */
+
+/* --------------------------------------------------------------------------- scaled sizes */
+/*
+  (planets radius * 2) * ratio
+  */
+/*$distanceScaleRatio:   0.000075em;*/
+/* --------------------------------------------------------------------------- planets distance scale sizes */
+
+/* --------------------------------------------------------------------------- planet size scale sizes */
+.scale-s #sun {
+    font-size: 300.3048em;
+}
+
+.scale-s #mercury .planet {
+    font-size: 170em;
+}
+
+.scale-s #venus .planet {
+    font-size: 190em;
+}
+
+.scale-s #earth .planet {
+    font-size: 190em;
+}
+
+
+
+.scale-s #mars .planet {
+    font-size: 170em;
+}
+
+.scale-s #jupiter .planet {
+    font-size: 210em;
+}
+
+.scale-s #saturn .planet {
+    font-size: 190em;
+}
+
+.scale-s #uranus .planet {
+    font-size: 240em;
+}
+
+.scale-s #neptune .planet {
+    font-size: 180em;
+}
+
+/* --------------------------------------------------------------------------- stretched orbits */
+
+
+/* --------------------------------------------------------------------------- scaled orbits */
+/* --------------------------------------------------------------------------- distance scale orbits */
+
+
+/* --------------------------------------------------------------------------- size scale orbits */
+.scale-s #mercury.orbit {
+    width: 441.3048em;
+    height: 441.3048em;
+    margin-top: -220.6524em;
+    margin-left: -220.6524em;
+}
+
+.scale-s #venus.orbit {
+    width: 457.3048em;
+    height: 457.3048em;
+    margin-top: -228.6524em;
+    margin-left: -228.6524em;
+}
+
+.scale-s #earth.orbit {
+    width: 473.3048em;
+    height: 473.3048em;
+    margin-top: -236.6524em;
+    margin-left: -236.6524em;
+}
+
+.scale-s #mars.orbit {
+    width: 489.3048em;
+    height: 489.3048em;
+    margin-top: -244.6524em;
+    margin-left: -244.6524em;
+}
+
+.scale-s #jupiter.orbit {
+    width: 561.3048em;
+    height: 561.3048em;
+    margin-top: -280.6524em;
+    margin-left: -280.6524em;
+}
+
+.scale-s #saturn.orbit {
+    width: 705.3048em;
+    height: 705.3048em;
+    margin-top: -352.6524em;
+    margin-left: -352.6524em;
+}
+
+.scale-s #uranus.orbit {
+    width: 817.3048em;
+    height: 817.3048em;
+    margin-top: -408.6524em;
+    margin-left: -408.6524em;
+}
+
+.scale-s #neptune.orbit {
+    width: 881.3048em;
+    height: 881.3048em;
+    margin-top: -440.6524em;
+    margin-left: -440.6524em;
+}
+
+/* Moon */
+.scale-s #earth .orbit {
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+
+/* --------------------------------------------------------------------------- text infos data */
+/* --------------------------------------------------------------------------- speed */
+
+/* --------------------------------------------------------------------------- planets starting position and lighting effect */
+/* --------------------------------------------------------------------------- mercury ; pos: Top */
+#mercury .pos {
+    left: 50%;
+    top: -1%;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- venus ; pos: Left */
+#venus .pos {
+    left: 0;
+    top: 50%;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- earth ; pos: Right */
+#earth .pos {
+    left: 100%;
+    top: 50%;
+}
+
+
+
+/* --------------------------------------------------------------------------- moon */
+#earth .orbit .pos {
+    left: 100%;
+    top: 50%;
+}
+
+/* --------------------------------------------------------------------------- mars ; pos: Bottom */
+#mars .pos {
+    left: 50%;
+    top: 100%;
+}
+
+
+
+/* --------------------------------------------------------------------------- jupiter ; pos: Right */
+#jupiter .pos {
+    left: 100%;
+    top: 50%;
+}
+
+
+/* --------------------------------------------------------------------------- saturn ; pos: Left */
+#saturn .pos {
+    left: 0%;
+    top: 50%;
+}
+
+
+
+#uranus .pos {
+    left: 0;
+    top: 50%;
+}
+
+
+
+/* --------------------------------------------------------------------------- neptune ; pos: Top */
+#neptune .pos {
+    left: 50%;
+    top: 0;
+}
+
+
+
+
+
+
+
+.sun #sun .infos,
+.mercury #mercury .infos,
+.venus #venus .infos,
+.earth #earth .infos,
+.mars #mars .infos,
+.jupiter #jupiter .infos,
+.saturn #saturn .infos,
+.uranus #uranus .infos,
+.neptune #neptune .infos {
+    display: block;
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.mercury #mercury.orbit,
+.venus #venus.orbit,
+.earth #earth.orbit,
+.mars #mars.orbit,
+.jupiter #jupiter.orbit,
+.saturn #saturn.orbit,
+.uranus #uranus.orbit,
+.neptune #neptune.orbit {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------- transitions */
+.pos {
+    transition-property: top, left;
+}
+
+#solar-system,
+.orbit,
+.planet,
+.satelite,
+.ring {
+    transition-property: width, height, top, left, margin-left, margin-top, webkit-transform;
+}
+
+#sun,
+.icon {
+    transition-property: width, height, webkit-transform;
+}
+
+#solar-system,
+#sun,
+.orbit,
+.pos,
+.planet,
+.satelite,
+.ring,
+.infos,
+.icon {
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+}
+
+#solar-system,
+#sun,
+.planet,
+.satelite,
+.ring {
+    transition-delay: 0s;
+}
+
+.pos {
+    transition-delay: 1s;
+}
+
+.opening #solar-system,
+.opening #sun,
+.opening .orbit,
+.opening .pos,
+.opening .planet,
+.opening .satelite,
+.opening .ring,
+.opening .infos,
+.opening h1,
+.opening #data,
+.opening dl.infos,
+.opening #controls {
+    transition-duration: 0s;
+    transition-delay: 0s;
+}
+
+.opening .pos {
+    transition-delay: 0s;
+}
+
+
+
+/* --------------------------------------------------------------------------- images */
+
+#universe {
+    background-image: url(../img/Lightlight1.png);
+
+}
+
+#sun {
+    background-image: url(../img/golg-piram.png);
+}
+
+#venus .planet {
+    background-image: url(../img/bronza.png);
+}
+
+
+
+#jupiter .planet {
+    background-image: url(../img/silver.png);
+}
+
+#saturn .planet {
+    background-image: url(../img/gold.png);
+}
+
+#uranus .planet {
+    background-image: url(../img/platina.png);
+}
+
+#neptune .planet {
+    background-image: url(../img/palladium.png);
+}
+
+/* --------------------------------------------------------------------------- responsive styles */
+@media screen and (max-width: 299px) {
+    #universe {
+        font-size: 20%;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    #universe {
+        font-size: 24%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #universe {
+        font-size: 36%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #universe {
+        font-size: 44%;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    #universe {
+        font-size: 58%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #universe {
+        font-size: 73%;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    #universe {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .zoom-close .scale-d #solar-system {
+        margin-left: -120%;
+    }
+}
+
+
+
+
+
+
+
+@keyframes glow {
+    0% {
+
+
+        filter: brightness(1);
+
+    }
+
+    100% {
+
+
+
+        filter: brightness(1.3);
+    }
+
+}
+
+@keyframes shine {
+    0% {
+        filter:
+            drop-shadow(3px 3px 40px #cacfb2);
+
+
+    }
+
+    100% {
+        filter:
+            drop-shadow(0px 0px 0px #cacfb2);
+
+    }
+
+}
+
+
+#sun {
+    animation: glow 1s infinite alternate-reverse;
+}
+
+.planet {
+    animation: shine 1s infinite alternate-reverse;
+}
+
+.hero {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.back-name {
+    text-align: center;
+    position: absolute;
+    font-size: 170px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    line-height: 160px;
+    transition: 1.6s ease;
+    color: rgba(10, 191, 166, 0.07);
+    z-index: -1;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .back-name {
+        font-size: 100px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .back-name {
+        font-size: 80px
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 30px;
+    
+
+}
+
+.card {
+    /* Rectangle 1 */
+    
+
+    padding: 15px 25px 25px;
+    border-left: 3px solid #0ABE9E;
+    border-right: 3px solid #186ED3;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-image: linear-gradient(90deg, #0ABE9E 0, #186ED3), linear-gradient(90deg, #0ABE9E 0, #186ED3);
+    
+    position: relative;
+    transition: .6s ease;
+
+    border-radius: 10px;
+max-height: 480px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 1px #003887, 0 0 2px #660168, 0 0 4px #003887, 0 0 6px #660168, 0 0 8px #003887, 0 0 9px #660168, 0 0 10px #003887, 0 0 12px #660168;
+    background-image: linear-gradient(90deg, #fc78ff 0, #99c3ff), linear-gradient(90deg, #fc78ff 0, #99c3ff);
+    border-left: 3px solid #fc78ff;
+    border-right: 3px solid #99c3ff;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card-title{
+  
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+
+text-align: center;
+
+
+
+
+}
+.card-head img{
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 15px;
+    -webkit-transition: -webkit-transform .8s ease-in-out; 
+     transition: transform 2s ease-in-out 0ms;
+
+}
+.card-text{
+/* Розыгрыш без проигрыша */
+
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+
+/* or 67% */
+display: flex;
+align-items: center;
+text-align:justify;
+
+}
+.card:hover .img-round{
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+}
+
+.card:hover .img-shine{
+   filter: drop-shadow( 3px 3px 3px white);
+}
