@@ -1042,12 +1042,17 @@ option {
 /* --------------------------------------------------------------------------- images */
 
 #universe {
-    background-image: url(../img/Lightlight1.png);
-
+   filter:drop-shadow( 0px 80px 80px #2c77cd);
+  
 }
 
 #sun {
+    
     background-image: url(../img/golg-piram.png);
+      
+
+
+
 }
 
 #venus .planet {
