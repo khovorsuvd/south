@@ -5,21 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SOUTH 1</title>
-
+<link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
 
 <body>
     <header class="container">
+        <div class="header">
         <a href="https://south1.net/" class="logo-header">
             <div class="logo"></div>
-            <div class="logo-slogan">крипто платформа розыгрышей</div>
+            <div class="logo-slogan d-none d-lg-flex">крипто платформа розыгрышей</div>
         </a>
-        <nav>
+        <nav class="d-none d-lg-flex">
             <ul class="link-list ">
                 <li class="">
-                    <a class="header-nav-link" href="https://south1.net/spinner">Спиннер</a>
+                    <a class="header-nav-link " href="https://south1.net/spinner">Спиннер</a>
                 </li>
                 <li class="">
                     <a class="header-nav-link" href="https://south1.net/freebie">Халява</a>
@@ -33,7 +34,7 @@
 
             </ul>
         </nav>
-        <div>
+        <div class="d-flex">
             <select class="language">
                 <option>RU</option>
                 <option>EN</option>
@@ -49,20 +50,22 @@
                 <option>CH</option>
 
             </select>
-            <a class="registration" href="https://south1.net/account">РЕГИСТРАЦИЯ</a>
-            <a class="login" href="https://south1.net/account">BХОД</a>
+            
+            <a class="registration d-none d-lg-flex " href="https://south1.net/account">РЕГИСТРАЦИЯ</a>
+            <a class="login d-none d-lg-flex" href="https://south1.net/account">BХОД</a>
+            
         </div>
-
+</div>
     </header>
     <div class="container hero">
         <div class=" ">
-            <h1 class="bord-title">Криптоплатформа<br> РОЗЫГРЫШЕЙ</h1>
+            <h1 class="bord-title bord-title fw-bold ">Криптоплатформа<br> РОЗЫГРЫШЕЙ</h1>
             <h3 class="bord-text"> Играй, выигрывай, храни<br> - крипто розыгрыши с нами!</h3>
             <a href="https://south1.net/space" class="button-bord">Вперёд!</a>
         </div>
 
 
-
+        <!--
 
         <div class=" view-3D zoom-large ">
 
@@ -136,11 +139,11 @@
             </div>
 
         </div>
-
+-->
 
 
     </div>
-    <div class="container">
+    <div class="container block-why">
         <div class="back-name">
             <span>ПОЧЕМУ</span>
             <span>ВЫБИРАЮТ</span>
@@ -149,9 +152,9 @@
 
         <div class="row">
 
-            <a href="https://south1.net/freebie" class="card col-lg-3 col-md-4 col-sm-6">
+            <a href="https://south1.net/freebie" class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/larets.png" class="img-shine" alt="cunduc" />
+                    <img src="./img/larets.png" class="img-shine" alt="cunduc">
                     <div class="card-title">
                         100% Победа
                     </div>
@@ -161,10 +164,10 @@
                     Розыгрыш без проигрыша
                 </div>
             </a>
-            
-            <a href="https://south1.net/spinner"  class="card col-lg-3 col-md-4 col-sm-6">
+
+            <a href="https://south1.net/spinner" class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/spiner.webp" class="img-round" alt="cspiner" />
+                    <img src="./img/spiner.webp" class="img-round" alt="cspiner">
                     <div class="card-title">
                         Большие бонусы и вознаграждения
                     </div>
@@ -172,13 +175,13 @@
 
                 <div class="card-text">
                     Еженедельные розыгрыши
-крипто-валют до ∞
+                    крипто-валют до ∞
                 </div>
             </a>
 
-            <a href="https://south1.net/space" class="card col-lg-3 col-md-4 col-sm-6">
+            <a href="https://south1.net/space" class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/planet.webp" class="img-round" alt="planet" />
+                    <img src="./img/planet.webp" class="img-round" alt="planet">
                     <div class="card-title">
                         Уникальные игры
                     </div>
@@ -191,26 +194,26 @@
             </a>
 
 
-            <a href="https://south1.net/trade" class="card col-lg-3 col-md-4 col-sm-6">
+            <a href="https://south1.net/trade" class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/birja.webp" class="img-round" alt="birja" />
+                    <img src="./img/birja.webp" class="img-round" alt="birja">
                     <div class="card-title">
                         Биржа
                     </div>
                 </div>
 
                 <div class="card-text">
-                    Площадка для торговли 
-криптовалютами
+                    Площадка для торговли
+                    криптовалютами
                 </div>
             </a>
 
-            <a class="card col-lg-3 col-md-4 col-sm-6">
+            <a class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/security.png" class="img-shine" alt="planet" />
+                    <img src="./img/security.png" class="img-shine" alt="planet">
                     <div class="card-title">
                         Безопасность и
- прозрачность
+                        прозрачность
                     </div>
                 </div>
 
@@ -221,9 +224,9 @@
                 </div>
             </a>
 
-            <a class="card col-lg-3 col-md-4 col-sm-6">
+            <a class="card-reason col-lg-3 col-md-4 col-sm-6">
                 <div class="card-head">
-                    <img src="./img/fast.png" class="img-shine" alt="planet" />
+                    <img src="./img/fast.png" class="img-shine" alt="planet">
                     <div class="card-title">
                         Быстрые транзакции
                     </div>
@@ -239,5 +242,38 @@
 
         </div>
     </div>
-    
+    <div class="container ">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active bg-transparent">
+                <a href="https://south1.net/freebie">
+                <img src="/img/slider-money.png " class="d-block w-100" alt="money">
+            </a>
+              </div>
+              <div class="carousel-item bg-transparent">
+                <a href="https://south1.net/space">
+                <img src="/img/slider-planet.png" class="d-block w-100" alt="spase">
+            </a>
+              </div>
+              <div class="carousel-item bg-transparent">
+                <a href="https://south1.net/spinner">
+                <img src="/img/slider-spinner.png" class="d-block w-100" alt="spiner">
+            </a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+
+       
+
+
+    </div>
+    <script type="module" src="/js/bootstrap.js"></script>
 </body>
