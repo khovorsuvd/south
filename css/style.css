@@ -1156,6 +1156,11 @@ option {
 .hero {
     display: flex;
     margin-bottom: 120px;
+    height: auto;
+}
+.bord-block{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .back-name {
