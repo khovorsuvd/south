@@ -143,10 +143,12 @@
 
 body {
     overflow-x: hidden;
-    background-color: #110A1D;
+    
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-
+    background: linear-gradient(217deg, rgb(34, 31, 31), rgb(28, 34, 65) 70.71%),
+    linear-gradient(127deg, rgb(25, 27, 30), rgba(40, 39, 44, 1) 70.71%),
+    linear-gradient(336deg, rgb(17, 17, 24), rgba(51, 51, 77, 1) 70.71%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1213,7 +1215,15 @@ option {
 }
 
 
-
+.gradient {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #110A1D 16%, rgba(17, 10, 29, .4) 74%, #110A1D 90%);
+}
 
 .row {
     display: flex;
