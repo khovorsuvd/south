@@ -401,11 +401,11 @@ option {
 .zoom-large {
     font-size: 7px;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    top: 53vh;
+    left: 53vw;
     max-width: 30vw;
     z-index: -4;
-
+    
 
 
 }
@@ -1184,13 +1184,14 @@ option {
 
 .hero {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     height: 100vh;
 }
 
 .bord-block {
     margin-top: 70px;
-    margin-bottom: 70px;
+    
+    
 }
 
 .reason-header {
@@ -1215,15 +1216,7 @@ option {
 }
 
 
-.gradient {
-    position: absolute;
-    z-index: -2;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(0deg, #110A1D 16%, rgba(17, 10, 29, .4) 74%, #110A1D 90%);
-}
+
 
 .row {
     display: flex;
