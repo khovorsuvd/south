@@ -454,9 +454,9 @@ option {
 .zoom-large {
     font-size: 7px;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
-    max-width: 30vw;
+    bottom: 0;
+    left: 40vw;
+    max-width: 20vw;
     z-index: -4;
     
 
