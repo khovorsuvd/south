@@ -146,7 +146,7 @@ body {
     
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    background: linear-gradient(217deg, rgb(34, 31, 31), rgb(28, 34, 65) 70.71%),
+    background: linear-gradient(217deg,#110A1D,#110A1D 70.71%),
     linear-gradient(127deg, rgb(25, 27, 30), rgba(40, 39, 44, 1) 70.71%),
     linear-gradient(336deg, rgb(17, 17, 24), rgba(51, 51, 77, 1) 70.71%);
     display: flex;
@@ -206,7 +206,7 @@ a {
     align-items: center;
     padding: 10px;
     position: sticky;
-    right: 0;
+    
     top: 0;
     z-index: 999;
     background-color: #110A1D;
